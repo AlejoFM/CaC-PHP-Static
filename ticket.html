@@ -92,7 +92,6 @@
 
                         <!-- Sección de Formulario -->
                         <section class="container mt-5">
-                            <label>Venta</label>
                             <h2 class="text-center">VALOR DE TICKET $200</h2>
                             <form>
                                 <div class="mb-3">
@@ -185,7 +184,7 @@
                                     break;
                             }
                     
-                            const valorFinal = cantidad * 200 * (1 - descuento);
+                            const valorFinal = cantidad * 200 * (1 - descuento).toFixed(2);
                     
                             document.getElementById('resumen-venta').textContent = `Total a pagar: $${valorFinal}`;
                         });
